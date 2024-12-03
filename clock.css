@@ -1,0 +1,60 @@
+/* إعدادات الأساس */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2798b7, #feb47b); /* تدرج لوني جميل */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* حاوية الساعة */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية داكنة قليلاً */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* تصميم الساعة */
+.clock {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.clock span {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* تأثير عند المرور بالماوس على الساعة */
+.clock:hover {
+    background-color: #444;
+    transform: translateY(-5px); /* رفع الساعة عند المرور بالماوس */
+}
+
+/* تصميم لعرض التاريخ والوقت في سطور منفصلة */
+.clock .date {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
